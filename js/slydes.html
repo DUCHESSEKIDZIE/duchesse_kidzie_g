@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIENVENUE</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class="light-mode">
+  <header>
+    <!-- Header content here if needed -->
+  </header>
+
+  <main class="main-width">
+    <div class="navbar">
+      <div id="logo-div">
+        <div id="logo">
+          <img src="capture d'écran 2025-01-28 095619.png" alt="logo" class="logo">
+          <p id="log"></p>
+        </div>
+      </div>
+      <h1>Gaianest</h1>
+      <div class="tabs-container">
+        <button class="tab-button" onclick="openTab('tarif')">Tarif</button>
+        <button class="tab-button" onclick="openTab('infos')">Infos</button>
+        <button class="tab-button" onclick="openTab('aide')">Aide</button>
+        <button class="tab-button" onclick="openTab('se connecter')">Se connecter</button>
+        <button id="toggleMode">Activer le mode sombre</button>
+      </div>
+    </div>
+
+    <h2>Gaianest et son histoire</h2>
+    <div id="logo2">
+      <img src="Capture d'écran 2025-01-29 092736.png" alt="logo2" class="logo2">
+    </div>
+
+    <p>
+      Chez Gaianest, nous réinventons l’habitat du futur en alliant design, innovation et sécurité. 
+      Nos maisons connectées, autonomes et évolutives sont conçues pour s’adapter aux besoins de chaque occupant tout en respectant l’environnement. 
+      🌱 Plus qu’un simple lieu de vie, une maison doit être un espace qui évolue, s’adapte et favorise le bien-être. 
+      C’est avec cette vision que Duchesse Kidzie a créé Gaianest en 2020, avec l’ambition de proposer des habitations intelligentes et écologiques. 
+      Grâce à une technologie de pointe et un engagement fort pour la transition énergétique, Gaianest s’est imposé comme un acteur majeur du secteur. 
+      En 2024, la marque est devenue une référence en matière de maisons durables et connectées, incarnant l’avenir de l’habitat.
+    </p>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="image3.png" alt="Slide 1"></div>
+        <div class="swiper-slide"><img src="image2.png" alt="Slide 2"></div>
+        <div class="swiper-slide"><img src="image 1.png" alt="Slide 3"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <h3>Formulaire d'inscription</h3>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+        <span class="error" id="nomError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required>
+        <span class="error" id="prenomError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="error" id="passwordError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirmer le mot de passe:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <span class="error" id="confirmPasswordError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="question">Choisissez une option :</label>
+        <select id="question" name="question" required>
+          <option value="reseaux_sociaux">Réseaux sociaux</option>
+          <option value="bouche_a_oreille">Bouche à oreille</option>
+          <option value="recherche_en_ligne">Recherche en ligne</option>
+          <option value="autres">Autres</option>
+        </select>
+        <span class="error" id="questionError"></span>
+      </div>
+
+      <button type="submit">S'inscrire</button>
+      <p id="formMessage"></p>
+    </form>
+
+  </main>
+</body>
+</html>

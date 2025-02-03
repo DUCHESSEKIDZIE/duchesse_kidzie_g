@@ -1,0 +1,406 @@
+body {
+  font-family: fondamento, Federant;
+  margin: 0;
+  padding: 0;
+  background-color: #CCB4A2;
+  color: CCB4A2;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 10px 20px;
+  background-color: #715C4C;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.logo{
+  width: 50px;
+}
+
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.swiper {
+  width: 100%;
+  max-width:500px; 
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  
+}
+
+#logo2 {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding:50px;
+}
+
+#logo-display img {
+  width: 150px; 
+  height: auto; 
+  max-width: 100%; 
+}
+
+.content-container {
+  display: flex; /* Utilisation de flexbox */
+  align-items: center; /* Aligner les éléments verticalement au centre */
+  gap: 20px; /* Espace entre le texte et l'image */
+}
+
+.text-with-border-left {
+  background-color: #D6CFCA;
+  border: 2px solid #000000;
+  border-radius: 60%; /* Pour un cercle parfait */
+  padding: 110px; /* Réduire le padding pour éviter que le cercle devienne trop grand */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  text-align: center; /* Centrer le texte à l'intérieur */
+  width: 400px; /* Largeur du cercle */
+  height: 400px; /* Hauteur du cercle pour qu'il soit parfait */
+  display: flex;
+  justify-content: center; /* Centrer le contenu horizontalement */
+  align-items: center; /* Centrer le contenu verticalement */
+}
+
+#lieu-de-travail {
+  width:65%; /* Largeur de l'image */
+}
+
+.lieu-de-travail {
+  width: 50%; /* L'image prend toute la largeur de son conteneur */
+  border-radius: 10px; /* Bordure arrondie sur l'image */
+}
+
+.bordered-text {
+  border: 1px solid #705c4c; /* Bordure carrée noire */
+  padding: 10px 20px; /* Espacement horizontal et vertical autour du texte */
+  margin: 10px 0; /* Espacement vertical entre les paragraphes */
+  border-radius: 0; /* Coins carrés */
+  background-color: #AE9785; /* Fond clair pour mieux voir la bordure */
+  display: inline-block; /* Limite la largeur de la bordure à la largeur du texte */
+  max-width: 80%; /* Limite la largeur max à 80% de l'espace disponible, ajuste selon tes besoins */
+}
+
+.tab-button {
+  margin-right:px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #FFCCA6;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  
+}
+.main-width{
+  width: 100%;
+}
+.navbar{display: flex;
+justify-content: space-between;
+
+}
+.tab-button:hover {
+  background-color: #e3e1e1;
+}
+
+.tab-content-container {
+  margin-top: 20px;
+}
+.tabs-container{
+  float: right;
+}
+
+
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f4f4f9;
+}
+
+body.dark-mode header {
+  background-color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Reset des marges et padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contrat */
+#contrat {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.contrat {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Bouton */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-link {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Conteneur principal */
+.slider-container {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteneur pour les images */
+.slider-wrapper {
+  display: flex;
+  width: 200%; /* Deux images en ligne pour que le slide fonctionne */
+  transition: transform 1s ease-in-out;
+}
+
+/* Chaque image dans le slide */
+.slider-wrapper img {
+  width: 50%; /* Assure que chaque image prend 50% de la largeur du conteneur */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Animation de slide automatique */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.slider-wrapper {
+  animation: slide 5s infinite; /* L'animation de slide dure 5 secondes et se répète */
+}
+
+/* Footer container */
+.footer-content {
+  display: flex; /* Utilise flexbox pour organiser les éléments */
+  justify-content: space-between; /* Sépare les éléments à gauche, au centre et à droite */
+  align-items: center; /* Aligne les éléments verticalement au centre */
+  padding: 20px; /* Ajoute un peu d'espace autour du footer */
+}
+
+.footer-left {
+  flex: 1; /* Prend tout l'espace à gauche */
+}
+
+.footer-logo {
+  width: 80px; 
+  height: auto; /* Maintient l'aspect du logo */
+  margin-left: 0; /* Retire tout espace supplémentaire à gauche */
+}
+
+/* Section centre pour le texte */
+.footer-center {
+  flex: 2; 
+  text-align: center; /* Centre le texte */
+}
+
+/* Section à droite pour les réseaux sociaux */
+.footer-right {
+  display: flex; /* Aligne les icônes horizontalement */
+  gap: 10px; /* Espace entre les icônes */
+  flex: 1; /* Prend tout l'espace à droite */
+  justify-content: flex-end; /* Aligne les icônes à droite */
+}
+
+.social-icon {
+  width: 30px; /* Taille des icônes */
+  height: auto;
+}
+#maison {
+  display: flex; /* j utilise le flex pour disposer les éléments */
+  justify-content: flex-end; /* Aligne l'image à droite */
+}
+
+#image {
+  display: inline-block;
+}
+
+.maison {
+  width: 100%; 
+  height: auto;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.testimonial {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.testimonial p {
+  font-size: 10px
+  color#333;
+}
+.testimonial strong {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #FFCCA6;
+}
+
+
+.flowchart {
+  text-align: center;
+}
+
+.step {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #333;
+  margin: 10px auto;
+}
